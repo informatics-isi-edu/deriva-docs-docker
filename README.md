@@ -1,7 +1,8 @@
 # deriva-docs-docker
+[![Docker build](https://img.shields.io/docker/cloud/build/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 [![Docker pulls](https://img.shields.io/docker/pulls/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 [![Docker layers](https://images.microbadger.com/badges/image/isrddev/deriva-docs.svg)](https://microbadger.com/images/isrddev/deriva-docs)
-[![Docker automated build](https://img.shields.io/docker/automated/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
+[![Docker automated build](https://img.shields.io/docker/cloud/automated/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 
 Docker image used for building the DERIVA platform documentation suite 
 from the GitHub repo [`deriva-docs`](https://github.com/informatics-isi-edu/deriva-docs).
