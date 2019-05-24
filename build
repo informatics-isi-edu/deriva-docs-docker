@@ -1,19 +1,23 @@
 #!/bin/bash
 set -e -o pipefail
 
-[ -z "${GITHUB_TOKEN}" ] && { echo "GITHUB_TOKEN environment variable must be set!"; exit 1; }
-
 echo -e "Removing existing deriva-docs directory...\n"
 rm -rf /deriva-docs
 
 # Clone deriva-docs from GitHub
-GITHUB_AUTH=${GITHUB_TOKEN}:x-oauth-basic@
+GITHUB_AUTH=
+if [[ -n "$GITHUB_TOKEN" ]]; then
+    GITHUB_AUTH=${GITHUB_TOKEN}:x-oauth-basic@
+fi
 
 GITHUB_TAG=${GITHUB_TAG:-master}
 git clone -b ${GITHUB_TAG} https://${GITHUB_AUTH}github.com/informatics-isi-edu/deriva-docs
 
 cd /deriva-docs
 make -C ./docs-src html
+
+[[ -z "${GITHUB_TOKEN}" ]] && \
+{ echo -e "\nGITHUB_TOKEN environment variable must be set for auto-commit functionality.\n"; exit 1; }
 
 GITHUB_USER=${GITHUB_USER:-isi-isrd-dev}
 GITHUB_EMAIL=${GITHUB_EMAIL:-isrddev@isi.edu}
