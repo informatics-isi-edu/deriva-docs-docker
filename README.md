@@ -1,6 +1,6 @@
 # deriva-docs-docker
 ![dockerhub-badge](https://img.shields.io/badge/images%20on-Docker%20Hub-blue.svg)
-[![Version](https://img.shields.io/docker/v/isrddev/deriva-docs.svg)](https://hub.docker.com/v/isrddev/deriva-docs/)
+[![Version](https://img.shields.io/docker/v/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 [![Docker pulls](https://img.shields.io/docker/pulls/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 [![Docker automated build](https://img.shields.io/docker/cloud/automated/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 
