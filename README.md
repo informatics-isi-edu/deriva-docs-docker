@@ -4,11 +4,6 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 [![Docker automated build](https://img.shields.io/docker/cloud/automated/isrddev/deriva-docs.svg)](https://hub.docker.com/r/isrddev/deriva-docs/)
 
-
-[dockerhub-link]: https://hub.docker.com/r/coqorg/coq#supported-tags "Supported tags on Docker Hub"
-
-[coqorg-badge]: https://img.shields.io/docker/v/coqorg/coq/latest
-[coqorg-link]: https://github.com/coq-community/docker-coq/wiki#docker-coq-images "coqorg/coq:latest"
 Docker image used for building the DERIVA platform documentation suite 
 from the GitHub repo [`deriva-docs`](https://github.com/informatics-isi-edu/deriva-docs).
 
